@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appointmemnts</title>
+    <link rel="stylesheet" href="style1.css" class="rel">
+    <link
+    href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+    rel="stylesheet"
+/>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <div class="nav_logo">HOSPICIO</div>
+                <ul class="nav_links" id="nav_links">
+                    <li class="link"><a href="appoint.html">Appointmemnts</a></li>
+                    <li class="link"><a href='doctors.html'>Doctors</a></li>
+                    <li class="link"><a href='dept.html'>Departments</a></li>
+                    <li class="link"><a href='about.html'>About Us</a></li>
+                    <li class="link"><a href='contact.html'>Contact Us</a></li>
+                    <li class="link"><a href='index.html'>Home </a></li>
+                </ul>   
+                <div class="nav_btns">
+                    <button class="btn sign_up">Sign Up</button>
+                    <button class="btn sign_in">Sign In</button>
+                </div>
+            </nav>
+        </header>
+        
+        <section>
+            <h2>Manage Your Appointments Now</h2>
+            <!-- Form for new appointment-->
+            <h2 id="appointment-form">Schedule New Appointment</h2>
+            <br>
+            <form action="schedule_appointment.php" method="POST" onsubmit="return validateForm()">
+                <label for="patient">Patient Name:</label>
+                <input type="text" id="patient" name="patient" required><br>
+    
+                <label for="doctor">Doctor:</label>
+                <input type="text" id="doctor" name="doctor" required><br>
+    
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date" required><br>
+    
+                <label for="time">Time:</label>
+                <input type="time" id="time" name="time" required><br>
+    
+                <button class="submit" type="submit">Schedule Appointment</button>
+            </form>
+        </section>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

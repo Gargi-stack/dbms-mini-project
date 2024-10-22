@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root{
+    --primary-color:#16c2d5;
+    --primary-color-dark:#2f4ae6;
+    --text-dark:#0b1221;
+    --text-light:#828895;
+    --white:#ffffff;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav_btns .sign_up{
+    padding: 1rem 2rem;
+    outline:none;
+    border: none;
+    font-size:1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.nav_btns .sign_in{
+    padding: 1rem 2rem;
+    outline:none;
+    border: none;
+    font-size:1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav_btns .sign_up:hover{
+    background-color: var(--primary-color-dark);
+}
+.nav_btns .sign_in:hover{
+    background-color: var(--primary-color-dark);
+}
+
+body{
+    font-family: "Nunito";
+}
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+nav{
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:1rem;
+}
+
+.nav_links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+.nav_btns{
+    gap:2rem;
+}
+.nav_logo{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.link a{
+    color: var(--text-light);
+    text-decoration: none;
+    cursor:pointer;
+    transition: 0.3s;
+}
+.link a:hover{
+    color: var(--primary-color);
+}
+
+.header{
+    padding: 0 1rem;
+    flex:1;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:2rem;
+    align-items: center;
+}
+.content h1{
+    margin-bottom: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+.content h1 span{
+    font-weight: 400;
+}
+.content p{
+    margin-bottom: 2rem;
+    color: var(--text-light);
+    line-height: 1.75rem;
+}
+
+.content .btn{
+    padding: 1rem 2rem;
+    outline:none;
+    border: none;
+    font-size:1rem;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+form{
+    display:flex;
+    flex-direction:column ;
+    align-items: center;
+    justify-content: center;
+}
+.submit{
+    color:white;
+    background-color:var(--primary-color);
+    padding:15px 10px;
+    font-size: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.submit:hover{
+    background-color:brown;
+}
+input,textarea{
+    display:block;
+  width:70%;
+  margin: 10px;
+  padding: 7px;
+  font-size: 13px;
+border: 2px solid black;
+border-radius: 15px;
+outline:none;
+}
+section{
+    max-width: 80%;
+    
+    padding: 20px;
+    margin: 23px;
+    margin: auto;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+section h2{
+    text-align: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size:30px;
+color:var(--text-dark);
+}
+form {
+    border: 1px solid #ccc;  /* Border around the box */
+    border-radius: 8px;      /* Rounded corners */
+    padding: 20px;           /* Spacing inside the box */
+    background-color: #f9f9f9;  /* Light background color */
+    max-width: 400px;        /* Set maximum width of the form */
+    margin: 20px auto;       /* Center the box on the page */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
